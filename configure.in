@@ -46,6 +46,7 @@ AC_ARG_ENABLE(compile-warnings,
 dnl Make sure that $ACLOCAL_FLAGS is passed to subsequent aclocal runs.
 ACLOCAL_AMFLAGS="\${ACLOCAL_FLAGS}"
 AC_SUBST([ACLOCAL_AMFLAGS])
+AC_CONFIG_MACRO_DIR([m4])
 
 AC_ISC_POSIX
 
