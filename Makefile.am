@@ -11,7 +11,8 @@ SUBDIRS = include
 
 DISTCHECK_CONFIGURE_FLAGS = --disable-silent-rules
 
-INCLUDES =                             \
+ACLOCAL_AMFLAGS= -I m4
+AM_CPPFLAGS =                          \
 	-DYYDEBUG=1                    \
 	-DYYERROR_VERBOSE=1            \
 	-I$(top_builddir)/include      \
